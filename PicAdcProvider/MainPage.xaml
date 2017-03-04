@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="PicAdcProvider.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PicAdcProvider"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Style="{ThemeResource HeaderTextBlockStyle}">Adc Value: </TextBlock>
+            <TextBlock x:Name="valueTextBox"  Style="{ThemeResource HeaderTextBlockStyle}">-</TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>
