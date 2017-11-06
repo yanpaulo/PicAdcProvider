@@ -64,8 +64,8 @@ namespace PicAdcProvider
             var loadTask = _reader.LoadAsync(10).AsTask();
             loadTask.Wait();
             var length = loadTask.Result;
-
-            return int.Parse(_reader.ReadString(length));
+            var resultText = _reader.ReadString(length);
+            return int.Parse(resultText);
         }
 
         uint channelStatus;
